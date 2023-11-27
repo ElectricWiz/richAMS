@@ -1,0 +1,88 @@
+[  8%] Building CXX object CMakeFiles/sim.dir/Sim.cc.o
+[ 16%] Building CXX object CMakeFiles/sim.dir/Run.cc.o
+[ 33%] Building CXX object CMakeFiles/sim.dir/EventAction.cc.o
+[ 33%] Building CXX object CMakeFiles/sim.dir/SteppingAction.cc.o
+/home/electricwiz/geant4/physicsMattersTutorials/SteppingAction.cc: In member function ‘virtual void MySteppingAction::UserSteppingAction(const G4Step*)’:
+/home/electricwiz/geant4/physicsMattersTutorials/SteppingAction.cc:15:75: error: invalid conversion from ‘const G4Event*’ to ‘G4Event*’ [-fpermissive]
+   15 |     G4Event* currentEvent = G4RunManager::GetRunManager()->GetCurrentEvent();
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+      |                                                                           |
+      |                                                                           const G4Event*
+/home/electricwiz/geant4/physicsMattersTutorials/SteppingAction.cc:63:55: error: no matching function for call to ‘NaFHit::NaFHit(G4ThreeVector&, G4ThreeVector&, G4double&)’
+   63 |                 NaFHit* hit = new NaFHit(pos, mom, ene);
+      |                                                       ^
+En el fichero incluido desde /home/electricwiz/geant4/physicsMattersTutorials/SteppingAction.cc:3:
+/home/electricwiz/geant4/physicsMattersTutorials/NaFHit.hh:12:9: nota: candidate: ‘NaFHit::NaFHit(G4double, G4ThreeVector, G4ThreeVector)’
+   12 |         NaFHit(G4double ene, G4ThreeVector pos, G4ThreeVector mom) : fEne(ene), fPos(pos), fMom(mom) {}
+      |         ^~~~~~
+/home/electricwiz/geant4/physicsMattersTutorials/NaFHit.hh:12:25: nota:   no hay una conversión conocida para el argumento 1 de ‘G4ThreeVector’ {aka ‘CLHEP::Hep3Vector’} a ‘G4double’ {aka ‘double’}
+   12 |         NaFHit(G4double ene, G4ThreeVector pos, G4ThreeVector mom) : fEne(ene), fPos(pos), fMom(mom) {}
+      |                ~~~~~~~~~^~~
+/home/electricwiz/geant4/physicsMattersTutorials/NaFHit.hh:11:9: nota: candidate: ‘NaFHit::NaFHit()’
+   11 |         NaFHit();
+      |         ^~~~~~
+/home/electricwiz/geant4/physicsMattersTutorials/NaFHit.hh:11:9: nota:   el candidato espera 0 argumentos, se proporcionaron 3
+/home/electricwiz/geant4/physicsMattersTutorials/NaFHit.hh:8:7: nota: candidate: ‘NaFHit::NaFHit(const NaFHit&)’
+    8 | class NaFHit : public G4VHit
+      |       ^~~~~~
+/home/electricwiz/geant4/physicsMattersTutorials/NaFHit.hh:8:7: nota:   el candidato espera 1 argumento, se proporcionaron 3
+/home/electricwiz/geant4/physicsMattersTutorials/EventAction.cc: In member function ‘virtual void EventAction::BeginOfEventAction(const G4Event*)’:
+/home/electricwiz/geant4/physicsMattersTutorials/EventAction.cc:20:41: error: ‘class G4PrimaryParticle’ has no member named ‘GetPosition’; did you mean ‘GetPolarization’?
+   20 |     position.push_back(primaryParticle->GetPosition().x());
+      |                                         ^~~~~~~~~~~
+      |                                         GetPolarization
+/home/electricwiz/geant4/physicsMattersTutorials/EventAction.cc:21:41: error: ‘class G4PrimaryParticle’ has no member named ‘GetPosition’; did you mean ‘GetPolarization’?
+   21 |     position.push_back(primaryParticle->GetPosition().y());
+      |                                         ^~~~~~~~~~~
+      |                                         GetPolarization
+/home/electricwiz/geant4/physicsMattersTutorials/EventAction.cc:22:41: error: ‘class G4PrimaryParticle’ has no member named ‘GetPosition’; did you mean ‘GetPolarization’?
+   22 |     position.push_back(primaryParticle->GetPosition().z());
+      |                                         ^~~~~~~~~~~
+      |                                         GetPolarization
+/home/electricwiz/geant4/physicsMattersTutorials/EventAction.cc:25:27: error: no matching function for call to ‘G4GenericAnalysisManager::FillNtupleDColumn(const char [16], const char [5], std::vector<double>&)’
+   25 |     man->FillNtupleDColumn("PrimaryParticle", "data", position);
+      |     ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+En el fichero incluido desde /home/electricwiz/geant4/geant4_install/include/Geant4/G4VAnalysisManager.hh:724,
+                 desde /home/electricwiz/geant4/geant4_install/include/Geant4/G4ToolsAnalysisManager.hh:34,
+                 desde /home/electricwiz/geant4/geant4_install/include/Geant4/G4GenericAnalysisManager.hh:35,
+                 desde /home/electricwiz/geant4/geant4_install/include/Geant4/G4AnalysisManager.hh:32,
+                 desde /home/electricwiz/geant4/physicsMattersTutorials/Detector.hh:13,
+                 desde /home/electricwiz/geant4/physicsMattersTutorials/Detector.cc:1,
+                 desde /home/electricwiz/geant4/physicsMattersTutorials/EventAction.cc:2:
+/home/electricwiz/geant4/geant4_install/include/Geant4/G4VAnalysisManager.icc:135:8: nota: candidate: ‘G4bool G4VAnalysisManager::FillNtupleDColumn(G4int, G4int, G4double)’
+  135 | G4bool G4VAnalysisManager::FillNtupleDColumn(G4int ntupleId, G4int columnId,
+      |        ^~~~~~~~~~~~~~~~~~
+/home/electricwiz/geant4/geant4_install/include/Geant4/G4VAnalysisManager.icc:136:54: nota:   no hay una conversión conocida para el argumento 3 de ‘std::vector<double>’ a ‘G4double’ {aka ‘double’}
+  136 |                                             G4double value)
+      |                                             ~~~~~~~~~^~~~~
+/home/electricwiz/geant4/geant4_install/include/Geant4/G4VAnalysisManager.icc:99:8: nota: candidate: ‘G4bool G4VAnalysisManager::FillNtupleDColumn(G4int, G4double)’
+   99 | G4bool G4VAnalysisManager::FillNtupleDColumn(G4int columnId, G4double value)
+      |        ^~~~~~~~~~~~~~~~~~
+/home/electricwiz/geant4/geant4_install/include/Geant4/G4VAnalysisManager.icc:99:8: nota:   el candidato espera 2 argumentos, se proporcionaron 3
+make[2]: *** [CMakeFiles/sim.dir/build.make:216: CMakeFiles/sim.dir/SteppingAction.cc.o] Error 1
+make[2]: *** Se espera a que terminen otras tareas....
+make[2]: *** [CMakeFiles/sim.dir/build.make:160: CMakeFiles/sim.dir/EventAction.cc.o] Error 1
+/home/electricwiz/geant4/physicsMattersTutorials/Sim.cc: In function ‘int main(int, char**)’:
+/home/electricwiz/geant4/physicsMattersTutorials/Sim.cc:40:5: error: ‘MySteppingAction’ was not declared in this scope; did you mean ‘G4UserSteppingAction’?
+   40 |     MySteppingAction* steppingAction = new MySteppingAction();
+      |     ^~~~~~~~~~~~~~~~
+      |     G4UserSteppingAction
+/home/electricwiz/geant4/physicsMattersTutorials/Sim.cc:40:23: error: ‘steppingAction’ no se declaró en este ámbito
+   40 |     MySteppingAction* steppingAction = new MySteppingAction();
+      |                       ^~~~~~~~~~~~~~
+/home/electricwiz/geant4/physicsMattersTutorials/Sim.cc:40:44: error: expected type-specifier before ‘MySteppingAction’
+   40 |     MySteppingAction* steppingAction = new MySteppingAction();
+      |                                            ^~~~~~~~~~~~~~~~
+/home/electricwiz/geant4/physicsMattersTutorials/Sim.cc:44:5: error: ‘MyEventAction’ was not declared in this scope; did you mean ‘MyRunAction’?
+   44 |     MyEventAction* eventAction = new MyEventAction();
+      |     ^~~~~~~~~~~~~
+      |     MyRunAction
+/home/electricwiz/geant4/physicsMattersTutorials/Sim.cc:44:20: error: ‘eventAction’ no se declaró en este ámbito
+   44 |     MyEventAction* eventAction = new MyEventAction();
+      |                    ^~~~~~~~~~~
+/home/electricwiz/geant4/physicsMattersTutorials/Sim.cc:44:38: error: expected type-specifier before ‘MyEventAction’
+   44 |     MyEventAction* eventAction = new MyEventAction();
+      |                                      ^~~~~~~~~~~~~
+make[2]: *** [CMakeFiles/sim.dir/build.make:76: CMakeFiles/sim.dir/Sim.cc.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:84: CMakeFiles/sim.dir/all] Error 2
+make: *** [Makefile:91: all] Error 2
