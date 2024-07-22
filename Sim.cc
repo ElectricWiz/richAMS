@@ -59,7 +59,7 @@ int main(int argc, char** argv)
     visManager->Initialize();
 
     G4UImanager* UImanager =  G4UImanager::GetUIpointer();
-/*    
+    
     UImanager->ApplyCommand("/vis/open OGL");
     UImanager->ApplyCommand("/vis/viewer/set/style surface");
     UImanager->ApplyCommand("/vis/viewer/set/viewpointVector -1 -1 0.5");
@@ -67,7 +67,7 @@ int main(int argc, char** argv)
     UImanager->ApplyCommand("/vis/viewer/set/autoRefresh true");
     UImanager->ApplyCommand("/vis/scene/add/trajectories smooth");
     UImanager->ApplyCommand("/vis/scene/endOfEventAction accumulate");  
-*/
+
 
    //batch mode
     G4String command  = "/control/execute ";

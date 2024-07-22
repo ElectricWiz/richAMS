@@ -15,6 +15,8 @@
 #include "G4Cons.hh"
 #include "G4OpticalSurface.hh"
 #include "G4LogicalSkinSurface.hh"
+#include "G4MultiUnion.hh"
+#include "G4ReplicatedSlice.hh"
 
 #include <cstdlib>
 

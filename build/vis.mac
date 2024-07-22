@@ -13,5 +13,5 @@
 /gps/ang/type cos
 /gps/ang/maxtheta 0.92 rad
 
-/run/beamOn 200000
+/run/beamOn 20
 
