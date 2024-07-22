@@ -1,0 +1,12 @@
+/gps/particle proton
+
+/gps/ene/type Mono
+/gps/ene/mono 3.0  GeV
+
+/gps/pos/type Plane
+/gps/pos/shape Circle
+/gps/pos/centre 0 0 315 cm
+/gps/pos/radius 50 cm
+
+/run/beamOn 100000
+

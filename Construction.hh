@@ -12,16 +12,19 @@
 #include "G4NistManager.hh"
 #include "G4SystemOfUnits.hh"
 #include "G4GenericMessenger.hh"
+#include "G4Cons.hh"
+#include "G4OpticalSurface.hh"
+#include "G4LogicalSkinSurface.hh"
+
 #include <cstdlib>
 
 #include "Detector.hh"
-#include "AeroRadiator.hh"
-#include "NaFRadiator.hh"
+#include "DataStore.hh"
 
 class MyDetectorConstruction : public G4VUserDetectorConstruction
 {
     public:
-        MyDetectorConstruction();
+        MyDetectorConstruction(DataStore *dataStore);
         ~MyDetectorConstruction();
         
         virtual G4VPhysicalVolume* Construct();
@@ -36,6 +39,8 @@ class MyDetectorConstruction : public G4VUserDetectorConstruction
         G4int nCols, nRows;
 
 	    G4GenericMessenger* fMessenger;
+
+        DataStore *dataStore;  
 };			       
 
 #endif

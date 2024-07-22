@@ -13,14 +13,20 @@
 #include "Generator.hh"
 #include "Run.hh"
 #include "EventAction.hh"
+#include "SteppingAction.hh"
+#include "DataStore.hh"
 
 class MyActionInitialization : public G4VUserActionInitialization
 {
 
     public:
-        MyActionInitialization();
+        MyActionInitialization(DataStore* dataStore);
         ~MyActionInitialization();
 
         virtual void Build() const;
+        virtual void BuildForMaster() const;
+        
+    private:
+        DataStore* dataStore;
 };
 #endif

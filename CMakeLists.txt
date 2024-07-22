@@ -18,4 +18,5 @@ target_link_libraries(sim ${Geant4_LIBRARIES})
 
 add_custom_target(Simulation DEPENDS sim)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS}")

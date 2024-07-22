@@ -1,6 +1,6 @@
 #include "Detector.hh"
 
-MySensitiveDetector::MySensitiveDetector(G4String name) : G4VSensitiveDetector(name)
+MySensitiveDetector::MySensitiveDetector(G4String name, DataStore* dataStore) : G4VSensitiveDetector(name), dataStore(dataStore)
 {}
 
 MySensitiveDetector::~MySensitiveDetector()
@@ -9,24 +9,47 @@ MySensitiveDetector::~MySensitiveDetector()
 G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhist)
 {
     G4AnalysisManager* man = G4AnalysisManager::Instance();
+    
+    if(aStep->GetTrack()->GetDefinition()->GetParticleName() == "opticalphoton")
+    {
+        
+        //Get the position of the sensitive detector
+        G4ThreeVector pos = aStep->GetPostStepPoint()->GetTouchableHandle()->GetVolume()->GetObjectTranslation();
+        man->FillNtupleDColumn(1, 0, pos[0]);
+        man->FillNtupleDColumn(1, 1, pos[1]);
 
-    //Get the position of the sensitive detector
-    G4ThreeVector pos = aStep->GetPostStepPoint()->GetTouchableHandle()->GetVolume()->GetObjectTranslation();
-    G4double ene = aStep->GetTotalEnergyDeposit();
+        G4int eventID = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
+        man->FillNtupleIColumn(1, 2, eventID);
 
-    man->FillNtupleDColumn(3, 0, pos[0]);
-    man->FillNtupleDColumn(3, 1, pos[1]);
-    man->FillNtupleDColumn(3, 2, pos[2]);
+        G4int trackID = aStep->GetTrack()->GetTrackID();
+        man->FillNtupleIColumn(1, 3, trackID);
+        
+        man->AddNtupleRow(1);
 
-    man->FillNtupleDColumn(3, 3, ene);
+        //dataStore->AddPhotonPosition(pos);
+        
+        aStep->GetTrack()->SetTrackStatus(fStopAndKill);
+    }
 
-    G4int eventID = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
+    if(aStep->GetTrack()->GetDefinition()->GetParticleName() == "proton")
+    {       
+        //Get the position of the sensitive detector
+        G4ThreeVector pos = aStep->GetPostStepPoint()->GetTouchableHandle()->GetVolume()->GetObjectTranslation();
 
-    man->FillNtupleIColumn(3, 4, eventID);
+        man->FillNtupleDColumn(2, 0, pos[0]);
+        man->FillNtupleDColumn(2, 1, pos[1]);
 
-    man->AddNtupleRow(3);
+        G4int eventID = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
 
-    aStep->GetTrack()->SetTrackStatus(fStopAndKill);
+        man->FillNtupleIColumn(2, 2, eventID);
+        
+        man->AddNtupleRow(2);
+
+        //dataStore->SetProtonPosition(pos);
+        
+        aStep->GetTrack()->SetTrackStatus(fStopAndKill);
+    }
 
     return true;
+
 }

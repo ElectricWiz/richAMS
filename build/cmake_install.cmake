@@ -1,4 +1,4 @@
-# Install script for directory: /home/electricwiz/geant4/physicsMattersTutorials
+# Install script for directory: /home/electricwiz/geant4/RICH
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/electricwiz/geant4/physicsMattersTutorials/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/electricwiz/geant4/RICH/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
