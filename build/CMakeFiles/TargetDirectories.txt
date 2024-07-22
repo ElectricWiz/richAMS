@@ -1,4 +1,0 @@
-/home/electricwiz/geant4/physicsMattersTutorials/build/CMakeFiles/sim.dir
-/home/electricwiz/geant4/physicsMattersTutorials/build/CMakeFiles/Simulation.dir
-/home/electricwiz/geant4/physicsMattersTutorials/build/CMakeFiles/edit_cache.dir
-/home/electricwiz/geant4/physicsMattersTutorials/build/CMakeFiles/rebuild_cache.dir
