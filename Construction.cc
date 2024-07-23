@@ -139,11 +139,11 @@ G4VPhysicalVolume *MyDetectorConstruction::Construct()
         1.0282151367898855, 1.0282082575770488, 1.028201552199032
     };
     G4double rindexBoro[75];
-    std::fill_n(rindexBoro, 40, 1.51446);
+    std::fill_n(rindexBoro, 75, 1.51446);
     G4double rindexWorld[75];
-    std::fill_n(rindexWorld, 40, 1.0);
+    std::fill_n(rindexWorld, 75, 1.0);
     G4double rindexPoly[75];
-    std::fill_n(rindexPoly, 40, 1.58);
+    std::fill_n(rindexPoly, 75, 1.58);
 
     G4double reflecPoly[75];
     std::fill_n(reflecPoly, 40, 0.975);
