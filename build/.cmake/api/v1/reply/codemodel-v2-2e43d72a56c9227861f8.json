@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.8"
@@ -20,7 +20,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "",
 			"projects" : 
 			[
 				{
@@ -41,14 +41,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Simulation::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Simulation-Debug-1e196b09ffe392fcf4ff.json",
+					"jsonFile" : "target-Simulation-1e196b09ffe392fcf4ff.json",
 					"name" : "Simulation",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "sim::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-sim-Debug-7407e255811189b7acd5.json",
+					"jsonFile" : "target-sim-9a63e48669ced86071c2.json",
 					"name" : "sim",
 					"projectIndex" : 0
 				}
@@ -58,12 +58,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/electricwiz/richAMS/build",
-		"source" : "/home/electricwiz/richAMS"
+		"build" : "/home/DerWissenschaftlerAusMexiko/richAMS/build",
+		"source" : "/home/DerWissenschaftlerAusMexiko/richAMS"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 3
+		"minor" : 7
 	}
 }

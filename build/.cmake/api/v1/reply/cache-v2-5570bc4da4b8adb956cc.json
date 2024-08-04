@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/addr2line"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/bin/x86_64-conda-linux-gnu-addr2line"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -31,7 +31,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/ar"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/bin/x86_64-conda-linux-gnu-ar"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -39,11 +39,11 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Choose the type of build, options are: None Debug Release RelWithDebInfo MinSizeRel ..."
 				}
 			],
 			"type" : "STRING",
-			"value" : "Debug"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_CACHEFILE_DIR",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/electricwiz/richAMS/build"
+			"value" : "/home/DerWissenschaftlerAusMexiko/richAMS/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -79,7 +79,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "22"
+			"value" : "30"
 		},
 		{
 			"name" : "CMAKE_CACHE_PATCH_VERSION",
@@ -91,7 +91,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "2"
 		},
 		{
 			"name" : "CMAKE_COLOR_MAKEFILE",
@@ -159,7 +159,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/c++"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/bin/x86_64-conda-linux-gnu-c++"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -175,7 +175,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-11"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/bin/x86_64-conda-linux-gnu-gcc-ar"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -191,7 +191,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-11"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/bin/x86_64-conda-linux-gnu-gcc-ranlib"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -207,7 +207,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : ""
+			"value" : "-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS_DEBUG",
@@ -287,7 +287,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/cc"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/bin/x86_64-conda-linux-gnu-cc"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -303,7 +303,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ar-11"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/bin/x86_64-conda-linux-gnu-gcc-ar"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -319,7 +319,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gcc-ranlib-11"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/bin/x86_64-conda-linux-gnu-gcc-ranlib"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -335,7 +335,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : ""
+			"value" : "-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS_DEBUG",
@@ -455,7 +455,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : ""
+			"value" : "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib -Wl,-rpath-link,/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib -L/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib"
 		},
 		{
 			"name" : "CMAKE_EXE_LINKER_FLAGS_DEBUG",
@@ -531,11 +531,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "Enable/Disable output of compile commands during generation."
 				}
 			],
 			"type" : "BOOL",
-			"value" : "TRUE"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_EXTRA_GENERATOR",
@@ -548,6 +548,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : ""
+		},
+		{
+			"name" : "CMAKE_FIND_PACKAGE_REDIRECTS_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake."
+				}
+			],
+			"type" : "STATIC",
+			"value" : "/home/DerWissenschaftlerAusMexiko/richAMS/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -631,19 +643,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
-		},
-		{
-			"name" : "CMAKE_HAVE_PTHREAD_H",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Have include pthread.h"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_HAVE_REMOVE",
@@ -679,7 +679,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/electricwiz/richAMS"
+			"value" : "/home/DerWissenschaftlerAusMexiko/richAMS"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -703,7 +703,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "0"
 		},
 		{
 			"name" : "CMAKE_LIB_ICE_HAS_ICECONNECTIONNUMBER",
@@ -731,7 +731,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/ld"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/bin/x86_64-conda-linux-gnu-ld"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -747,7 +747,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/gmake"
+			"value" : "/usr/bin/make"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -763,7 +763,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : ""
+			"value" : "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib -Wl,-rpath-link,/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib -L/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS_DEBUG",
@@ -843,7 +843,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/nm"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/bin/x86_64-conda-linux-gnu-nm"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -871,7 +871,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/objcopy"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/bin/x86_64-conda-linux-gnu-objcopy"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -887,7 +887,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/objdump"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/bin/x86_64-conda-linux-gnu-objdump"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -951,7 +951,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/ranlib"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/bin/x86_64-conda-linux-gnu-ranlib"
 		},
 		{
 			"name" : "CMAKE_READELF",
@@ -967,7 +967,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/readelf"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/bin/x86_64-conda-linux-gnu-readelf"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -979,7 +979,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/share/cmake-3.22"
+			"value" : "/usr/share/cmake"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -995,7 +995,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : ""
+			"value" : "-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib -Wl,-rpath-link,/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib -L/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS_DEBUG",
@@ -1187,7 +1187,23 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/bin/strip"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/bin/x86_64-conda-linux-gnu-strip"
+		},
+		{
+			"name" : "CMAKE_TAPI",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a program."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "CMAKE_TAPI-NOTFOUND"
 		},
 		{
 			"name" : "CMAKE_UNAME",
@@ -1243,11 +1259,23 @@
 				},
 				{
 					"name" : "HELPSTRING",
+					"value" : "no documentation, not a cache value"
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/lib/libexpat.so"
+		},
+		{
+			"name" : "EXPAT_LIBRARY_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
 					"value" : "Path to a library."
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libexpat.so"
+			"value" : "/usr/lib/libexpat.so"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_EXPAT",
@@ -1259,7 +1287,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/lib/x86_64-linux-gnu/libexpat.so][/usr/include][v2.4.7(2.4.7)]"
+			"value" : "[/usr/lib/libexpat.so][/usr/include][v2.6.2(2.6.2)]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Geant4",
@@ -1271,7 +1299,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/home/electricwiz/geant4/lib/cmake/Geant4/Geant4Config.cmake][v11.2.2()]"
+			"value" : "[/home/DerWissenschaftlerAusMexiko/geant4/install/lib/cmake/Geant4/Geant4Config.cmake][v11.2.2()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_OpenGL",
@@ -1283,7 +1311,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/lib/x86_64-linux-gnu/libGL.so][/usr/include][c ][v()]"
+			"value" : "[/usr/lib/libOpenGL.so][/usr/lib/libGLX.so][/usr/include][c ][v()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",
@@ -1307,7 +1335,103 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/usr/include][/usr/lib/x86_64-linux-gnu/libX11.so][c ][v()]"
+			"value" : "[/usr/include][/usr/lib/libX11.so][c ][v()]"
+		},
+		{
+			"name" : "FREETYPE_INCLUDE_DIR_freetype2",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include/freetype2"
+		},
+		{
+			"name" : "FREETYPE_INCLUDE_DIR_ft2build",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include/freetype2"
+		},
+		{
+			"name" : "FREETYPE_LIBRARY_DEBUG",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "FREETYPE_LIBRARY_DEBUG-NOTFOUND"
+		},
+		{
+			"name" : "FREETYPE_LIBRARY_RELEASE",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libfreetype.so"
+		},
+		{
+			"name" : "Fontconfig_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "Fontconfig_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libfontconfig.so"
 		},
 		{
 			"name" : "Geant4_DIR",
@@ -1319,7 +1443,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/electricwiz/geant4/lib/cmake/Geant4"
+			"value" : "/home/DerWissenschaftlerAusMexiko/geant4/install/lib/cmake/Geant4"
 		},
 		{
 			"name" : "OPENGL_EGL_INCLUDE_DIR",
@@ -1336,6 +1460,54 @@
 			],
 			"type" : "PATH",
 			"value" : "/usr/include"
+		},
+		{
+			"name" : "OPENGL_GLES2_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/include"
+		},
+		{
+			"name" : "OPENGL_GLES3_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/include"
+		},
+		{
+			"name" : "OPENGL_GLU_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "OPENGL_GLX_INCLUDE_DIR",
@@ -1383,7 +1555,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libEGL.so"
+			"value" : "/usr/lib/libEGL.so"
 		},
 		{
 			"name" : "OPENGL_gl_LIBRARY",
@@ -1399,7 +1571,39 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libGL.so"
+			"value" : "/usr/lib/libGL.so"
+		},
+		{
+			"name" : "OPENGL_gles2_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/libGLESv2.so"
+		},
+		{
+			"name" : "OPENGL_gles3_LIBRARY",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/libGLESv2.so"
 		},
 		{
 			"name" : "OPENGL_glu_LIBRARY",
@@ -1415,7 +1619,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libGLU.so"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libGLU.so"
 		},
 		{
 			"name" : "OPENGL_glx_LIBRARY",
@@ -1431,7 +1635,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libGLX.so"
+			"value" : "/usr/lib/libGLX.so"
 		},
 		{
 			"name" : "OPENGL_opengl_LIBRARY",
@@ -1447,7 +1651,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "OPENGL_opengl_LIBRARY-NOTFOUND"
+			"value" : "/usr/lib/libOpenGL.so"
 		},
 		{
 			"name" : "OPENGL_xmesa_INCLUDE_DIR",
@@ -1475,7 +1679,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "-I/usr/include"
 		},
 		{
 			"name" : "PC_EXPAT_CFLAGS_I",
@@ -1535,7 +1739,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "PC_EXPAT_LDFLAGS",
@@ -1547,7 +1751,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-L/usr/lib/x86_64-linux-gnu;-lexpat;-lm"
+			"value" : "-L/usr/lib;-lexpat"
 		},
 		{
 			"name" : "PC_EXPAT_LDFLAGS_OTHER",
@@ -1571,7 +1775,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/lib/x86_64-linux-gnu"
+			"value" : "/usr/lib"
 		},
 		{
 			"name" : "PC_EXPAT_LIBRARIES",
@@ -1583,7 +1787,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "expat;m"
+			"value" : "expat"
 		},
 		{
 			"name" : "PC_EXPAT_LIBRARY_DIRS",
@@ -1595,7 +1799,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/lib/x86_64-linux-gnu"
+			"value" : "/usr/lib"
 		},
 		{
 			"name" : "PC_EXPAT_LIBS",
@@ -1679,7 +1883,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "-I/usr/include;-DXML_STATIC"
 		},
 		{
 			"name" : "PC_EXPAT_STATIC_CFLAGS_I",
@@ -1703,7 +1907,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "-DXML_STATIC"
 		},
 		{
 			"name" : "PC_EXPAT_STATIC_INCLUDE_DIRS",
@@ -1715,7 +1919,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "PC_EXPAT_STATIC_LDFLAGS",
@@ -1727,7 +1931,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "-L/usr/lib/x86_64-linux-gnu;-lexpat;-lm"
+			"value" : "-L/usr/lib;-lexpat;-lm"
 		},
 		{
 			"name" : "PC_EXPAT_STATIC_LDFLAGS_OTHER",
@@ -1775,7 +1979,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/lib/x86_64-linux-gnu"
+			"value" : "/usr/lib"
 		},
 		{
 			"name" : "PC_EXPAT_STATIC_LIBS",
@@ -1835,7 +2039,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "2.4.7"
+			"value" : "2.6.2"
 		},
 		{
 			"name" : "PC_EXPAT_expat_INCLUDEDIR",
@@ -1918,6 +2122,426 @@
 			"value" : "/usr/bin/pkg-config"
 		},
 		{
+			"name" : "PKG_FONTCONFIG_CFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-I/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include;-I/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include/freetype2;-I/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include/libpng16"
+		},
+		{
+			"name" : "PKG_FONTCONFIG_CFLAGS_I",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_FONTCONFIG_CFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_FONTCONFIG_FOUND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "PKG_FONTCONFIG_INCLUDEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "PKG_FONTCONFIG_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include;/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include/freetype2;/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include/libpng16"
+		},
+		{
+			"name" : "PKG_FONTCONFIG_LDFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-L/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib;-lfontconfig;-lfreetype"
+		},
+		{
+			"name" : "PKG_FONTCONFIG_LDFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_FONTCONFIG_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib"
+		},
+		{
+			"name" : "PKG_FONTCONFIG_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "fontconfig;freetype"
+		},
+		{
+			"name" : "PKG_FONTCONFIG_LIBRARY_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib"
+		},
+		{
+			"name" : "PKG_FONTCONFIG_LIBS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_FONTCONFIG_LIBS_L",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_FONTCONFIG_LIBS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_FONTCONFIG_LIBS_PATHS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_FONTCONFIG_MODULE_NAME",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "fontconfig"
+		},
+		{
+			"name" : "PKG_FONTCONFIG_PREFIX",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis"
+		},
+		{
+			"name" : "PKG_FONTCONFIG_STATIC_CFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-I/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include;-I/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include/freetype2;-I/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include/libpng16;-DXML_STATIC"
+		},
+		{
+			"name" : "PKG_FONTCONFIG_STATIC_CFLAGS_I",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_FONTCONFIG_STATIC_CFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-DXML_STATIC"
+		},
+		{
+			"name" : "PKG_FONTCONFIG_STATIC_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include;/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include/freetype2;/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include/libpng16"
+		},
+		{
+			"name" : "PKG_FONTCONFIG_STATIC_LDFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-L/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib;-lfontconfig;-pthread;-lfreetype;-L/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib;-lpng16;-lm;-lm;-lz;-lexpat;-lm"
+		},
+		{
+			"name" : "PKG_FONTCONFIG_STATIC_LDFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-pthread"
+		},
+		{
+			"name" : "PKG_FONTCONFIG_STATIC_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_FONTCONFIG_STATIC_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "fontconfig;freetype;png16;m;m;z;expat;m"
+		},
+		{
+			"name" : "PKG_FONTCONFIG_STATIC_LIBRARY_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib;/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib"
+		},
+		{
+			"name" : "PKG_FONTCONFIG_STATIC_LIBS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_FONTCONFIG_STATIC_LIBS_L",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_FONTCONFIG_STATIC_LIBS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_FONTCONFIG_STATIC_LIBS_PATHS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_FONTCONFIG_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "2.14.2"
+		},
+		{
+			"name" : "PKG_FONTCONFIG_fontconfig_INCLUDEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_FONTCONFIG_fontconfig_LIBDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_FONTCONFIG_fontconfig_PREFIX",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
+			"name" : "PKG_FONTCONFIG_fontconfig_VERSION",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
 			"name" : "PTL_DIR",
 			"properties" : 
 			[
@@ -1927,7 +2551,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/home/electricwiz/geant4/lib/cmake/Geant4/PTL"
+			"value" : "/home/DerWissenschaftlerAusMexiko/geant4/install/lib/cmake/Geant4/PTL"
 		},
 		{
 			"name" : "Simulation_BINARY_DIR",
@@ -1939,7 +2563,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/electricwiz/richAMS/build"
+			"value" : "/home/DerWissenschaftlerAusMexiko/richAMS/build"
 		},
 		{
 			"name" : "Simulation_IS_TOP_LEVEL",
@@ -1963,7 +2587,19 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/electricwiz/richAMS"
+			"value" : "/home/DerWissenschaftlerAusMexiko/richAMS"
+		},
+		{
+			"name" : "THREADS_HAVE_PTHREAD_ARG",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Result of TRY_COMPILE"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "TRUE"
 		},
 		{
 			"name" : "X11_ICE_INCLUDE_PATH",
@@ -1995,7 +2631,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libICE.so"
+			"value" : "/usr/lib/libICE.so"
 		},
 		{
 			"name" : "X11_LIBRARIES",
@@ -2007,7 +2643,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "(This variable does not exist and should not be used)"
+					"value" : ""
 				}
 			],
 			"type" : "UNINITIALIZED",
@@ -2019,7 +2655,7 @@
 			[
 				{
 					"name" : "HELPSTRING",
-					"value" : "Have library /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so"
+					"value" : "Have library /usr/lib/libX11.so;/usr/lib/libXext.so"
 				}
 			],
 			"type" : "INTERNAL",
@@ -2055,7 +2691,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libSM.so"
+			"value" : "/usr/lib/libSM.so"
 		},
 		{
 			"name" : "X11_X11_INCLUDE_PATH",
@@ -2087,7 +2723,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libX11.so"
+			"value" : "/usr/lib/libX11.so"
 		},
 		{
 			"name" : "X11_X11_xcb_INCLUDE_PATH",
@@ -2103,7 +2739,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_X11_xcb_INCLUDE_PATH-NOTFOUND"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_X11_xcb_LIB",
@@ -2119,7 +2755,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_X11_xcb_LIB-NOTFOUND"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libX11-xcb.so"
 		},
 		{
 			"name" : "X11_XRes_INCLUDE_PATH",
@@ -2167,7 +2803,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_XSync_INCLUDE_PATH",
@@ -2183,7 +2819,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_Xaccessrules_INCLUDE_PATH",
@@ -2199,7 +2835,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xaccessrules_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_Xaccessstr_INCLUDE_PATH",
@@ -2215,7 +2851,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_Xau_INCLUDE_PATH",
@@ -2231,7 +2867,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_Xau_LIB",
@@ -2247,7 +2883,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libXau.so"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libXau.so"
 		},
 		{
 			"name" : "X11_Xaw_INCLUDE_PATH",
@@ -2263,7 +2899,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xaw_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_Xaw_LIB",
@@ -2279,7 +2915,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_Xaw_LIB-NOTFOUND"
+			"value" : "/usr/lib/libXaw.so"
 		},
 		{
 			"name" : "X11_Xcomposite_INCLUDE_PATH",
@@ -2295,7 +2931,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xcomposite_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_Xcomposite_LIB",
@@ -2311,7 +2947,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_Xcomposite_LIB-NOTFOUND"
+			"value" : "/usr/lib/libXcomposite.so"
 		},
 		{
 			"name" : "X11_Xcursor_INCLUDE_PATH",
@@ -2327,7 +2963,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xcursor_INCLUDE_PATH-NOTFOUND"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_Xcursor_LIB",
@@ -2343,7 +2979,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_Xcursor_LIB-NOTFOUND"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libXcursor.so"
 		},
 		{
 			"name" : "X11_Xdamage_INCLUDE_PATH",
@@ -2359,7 +2995,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xdamage_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_Xdamage_LIB",
@@ -2375,7 +3011,23 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_Xdamage_LIB-NOTFOUND"
+			"value" : "/usr/lib/libXdamage.so"
+		},
+		{
+			"name" : "X11_Xdbe_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_Xdmcp_INCLUDE_PATH",
@@ -2391,7 +3043,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_Xdmcp_LIB",
@@ -2407,7 +3059,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libXdmcp.so"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libXdmcp.so"
 		},
 		{
 			"name" : "X11_Xext_INCLUDE_PATH",
@@ -2439,7 +3091,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libXext.so"
+			"value" : "/usr/lib/libXext.so"
 		},
 		{
 			"name" : "X11_Xfixes_INCLUDE_PATH",
@@ -2455,7 +3107,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_Xfixes_LIB",
@@ -2471,7 +3123,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libXfixes.so"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libXfixes.so"
 		},
 		{
 			"name" : "X11_Xft_INCLUDE_PATH",
@@ -2487,7 +3139,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xft_INCLUDE_PATH-NOTFOUND"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_Xft_LIB",
@@ -2503,7 +3155,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_Xft_LIB-NOTFOUND"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libXft.so"
 		},
 		{
 			"name" : "X11_Xi_INCLUDE_PATH",
@@ -2535,7 +3187,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libXi.so"
+			"value" : "/usr/lib/libXi.so"
 		},
 		{
 			"name" : "X11_Xinerama_INCLUDE_PATH",
@@ -2551,7 +3203,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xinerama_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_Xinerama_LIB",
@@ -2567,7 +3219,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_Xinerama_LIB-NOTFOUND"
+			"value" : "/usr/lib/libXinerama.so"
 		},
 		{
 			"name" : "X11_Xkb_INCLUDE_PATH",
@@ -2583,7 +3235,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_Xkblib_INCLUDE_PATH",
@@ -2599,7 +3251,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_Xlib_INCLUDE_PATH",
@@ -2615,7 +3267,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_Xmu_INCLUDE_PATH",
@@ -2647,7 +3299,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libXmu.so"
+			"value" : "/usr/lib/libXmu.so"
 		},
 		{
 			"name" : "X11_Xpm_INCLUDE_PATH",
@@ -2663,7 +3315,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xpm_INCLUDE_PATH-NOTFOUND"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_Xpm_LIB",
@@ -2679,7 +3331,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_Xpm_LIB-NOTFOUND"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libXpm.so"
 		},
 		{
 			"name" : "X11_Xrandr_INCLUDE_PATH",
@@ -2695,7 +3347,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xrandr_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_Xrandr_LIB",
@@ -2711,7 +3363,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_Xrandr_LIB-NOTFOUND"
+			"value" : "/usr/lib/libXrandr.so"
 		},
 		{
 			"name" : "X11_Xrender_INCLUDE_PATH",
@@ -2727,7 +3379,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xrender_INCLUDE_PATH-NOTFOUND"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_Xrender_LIB",
@@ -2743,7 +3395,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_Xrender_LIB-NOTFOUND"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libXrender.so"
 		},
 		{
 			"name" : "X11_Xshape_INCLUDE_PATH",
@@ -2759,7 +3411,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_Xss_INCLUDE_PATH",
@@ -2775,7 +3427,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xss_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_Xss_LIB",
@@ -2791,7 +3443,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_Xss_LIB-NOTFOUND"
+			"value" : "/usr/lib/libXss.so"
 		},
 		{
 			"name" : "X11_Xt_INCLUDE_PATH",
@@ -2823,7 +3475,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libXt.so"
+			"value" : "/usr/lib/libXt.so"
 		},
 		{
 			"name" : "X11_Xtst_INCLUDE_PATH",
@@ -2839,7 +3491,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xtst_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_Xtst_LIB",
@@ -2855,7 +3507,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_Xtst_LIB-NOTFOUND"
+			"value" : "/usr/lib/libXtst.so"
 		},
 		{
 			"name" : "X11_Xutil_INCLUDE_PATH",
@@ -2871,7 +3523,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_Xv_INCLUDE_PATH",
@@ -2887,7 +3539,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xv_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_Xv_LIB",
@@ -2903,7 +3555,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_Xv_LIB-NOTFOUND"
+			"value" : "/usr/lib/libXv.so"
 		},
 		{
 			"name" : "X11_Xxf86misc_INCLUDE_PATH",
@@ -2951,7 +3603,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_Xxf86vm_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_Xxf86vm_LIB",
@@ -2967,7 +3619,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_Xxf86vm_LIB-NOTFOUND"
+			"value" : "/usr/lib/libXxf86vm.so"
 		},
 		{
 			"name" : "X11_dpms_INCLUDE_PATH",
@@ -2983,7 +3635,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_xcb_INCLUDE_PATH",
@@ -2999,7 +3651,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/usr/include"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_xcb_LIB",
@@ -3015,7 +3667,295 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libxcb.so"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb.so"
+		},
+		{
+			"name" : "X11_xcb_composite_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_composite_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-composite.so"
+		},
+		{
+			"name" : "X11_xcb_cursor_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/include"
+		},
+		{
+			"name" : "X11_xcb_cursor_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/libxcb-cursor.so"
+		},
+		{
+			"name" : "X11_xcb_damage_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_damage_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-damage.so"
+		},
+		{
+			"name" : "X11_xcb_dpms_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_dpms_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-dpms.so"
+		},
+		{
+			"name" : "X11_xcb_dri2_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_dri2_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-dri2.so"
+		},
+		{
+			"name" : "X11_xcb_dri3_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_dri3_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-dri3.so"
+		},
+		{
+			"name" : "X11_xcb_errors_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "X11_xcb_errors_INCLUDE_PATH-NOTFOUND"
+		},
+		{
+			"name" : "X11_xcb_errors_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "X11_xcb_errors_LIB-NOTFOUND"
+		},
+		{
+			"name" : "X11_xcb_ewmh_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/include"
+		},
+		{
+			"name" : "X11_xcb_ewmh_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/libxcb-ewmh.so"
+		},
+		{
+			"name" : "X11_xcb_glx_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_glx_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-glx.so"
 		},
 		{
 			"name" : "X11_xcb_icccm_INCLUDE_PATH",
@@ -3031,7 +3971,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_xcb_icccm_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_xcb_icccm_LIB",
@@ -3047,7 +3987,391 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_xcb_icccm_LIB-NOTFOUND"
+			"value" : "/usr/lib/libxcb-icccm.so"
+		},
+		{
+			"name" : "X11_xcb_image_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/include"
+		},
+		{
+			"name" : "X11_xcb_image_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/libxcb-image.so"
+		},
+		{
+			"name" : "X11_xcb_keysyms_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/include"
+		},
+		{
+			"name" : "X11_xcb_keysyms_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/libxcb-keysyms.so"
+		},
+		{
+			"name" : "X11_xcb_present_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_present_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-present.so"
+		},
+		{
+			"name" : "X11_xcb_randr_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_randr_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-randr.so"
+		},
+		{
+			"name" : "X11_xcb_record_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_record_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-record.so"
+		},
+		{
+			"name" : "X11_xcb_render_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_render_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-render.so"
+		},
+		{
+			"name" : "X11_xcb_render_util_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/include"
+		},
+		{
+			"name" : "X11_xcb_render_util_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/libxcb-render-util.so"
+		},
+		{
+			"name" : "X11_xcb_res_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_res_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-res.so"
+		},
+		{
+			"name" : "X11_xcb_screensaver_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_screensaver_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-screensaver.so"
+		},
+		{
+			"name" : "X11_xcb_shape_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_shape_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-shape.so"
+		},
+		{
+			"name" : "X11_xcb_shm_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_shm_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-shm.so"
+		},
+		{
+			"name" : "X11_xcb_sync_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_sync_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-sync.so"
 		},
 		{
 			"name" : "X11_xcb_util_INCLUDE_PATH",
@@ -3063,7 +4387,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_xcb_util_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_xcb_util_LIB",
@@ -3079,7 +4403,39 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_xcb_util_LIB-NOTFOUND"
+			"value" : "/usr/lib/libxcb-util.so"
+		},
+		{
+			"name" : "X11_xcb_xf86dri_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_xf86dri_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-xf86dri.so"
 		},
 		{
 			"name" : "X11_xcb_xfixes_INCLUDE_PATH",
@@ -3095,7 +4451,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_xcb_xfixes_INCLUDE_PATH-NOTFOUND"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_xcb_xfixes_LIB",
@@ -3111,7 +4467,83 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_xcb_xfixes_LIB-NOTFOUND"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-xfixes.so"
+		},
+		{
+			"name" : "X11_xcb_xinerama_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_xinerama_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-xinerama.so"
+		},
+		{
+			"name" : "X11_xcb_xinput_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_xinput_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-xinput.so"
+		},
+		{
+			"name" : "X11_xcb_xkb_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
 		},
 		{
 			"name" : "X11_xcb_xkb_LIB",
@@ -3127,7 +4559,135 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_xcb_xkb_LIB-NOTFOUND"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-xkb.so"
+		},
+		{
+			"name" : "X11_xcb_xrm_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "X11_xcb_xrm_INCLUDE_PATH-NOTFOUND"
+		},
+		{
+			"name" : "X11_xcb_xrm_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "X11_xcb_xrm_LIB-NOTFOUND"
+		},
+		{
+			"name" : "X11_xcb_xtest_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_xtest_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-xtest.so"
+		},
+		{
+			"name" : "X11_xcb_xv_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_xv_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-xv.so"
+		},
+		{
+			"name" : "X11_xcb_xvmc_INCLUDE_PATH",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/include"
+		},
+		{
+			"name" : "X11_xcb_xvmc_LIB",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libxcb-xvmc.so"
 		},
 		{
 			"name" : "X11_xkbcommon_INCLUDE_PATH",
@@ -3143,7 +4703,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_xkbcommon_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_xkbcommon_LIB",
@@ -3159,7 +4719,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_xkbcommon_LIB-NOTFOUND"
+			"value" : "/usr/lib/libxkbcommon.so"
 		},
 		{
 			"name" : "X11_xkbcommon_X11_INCLUDE_PATH",
@@ -3175,7 +4735,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_xkbcommon_X11_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_xkbcommon_X11_LIB",
@@ -3191,7 +4751,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_xkbcommon_X11_LIB-NOTFOUND"
+			"value" : "/usr/lib/libxkbcommon-x11.so"
 		},
 		{
 			"name" : "X11_xkbfile_INCLUDE_PATH",
@@ -3207,7 +4767,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "X11_xkbfile_INCLUDE_PATH-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "X11_xkbfile_LIB",
@@ -3223,7 +4783,19 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "X11_xkbfile_LIB-NOTFOUND"
+			"value" : "/usr/lib/libxkbfile.so"
+		},
+		{
+			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "linker supports push/pop state"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "TRUE"
 		},
 		{
 			"name" : "__pkg_config_arguments_PC_EXPAT",
@@ -3238,7 +4810,31 @@
 			"value" : "QUIET;expat"
 		},
 		{
+			"name" : "__pkg_config_arguments_PKG_FONTCONFIG",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "QUIET;fontconfig"
+		},
+		{
 			"name" : "__pkg_config_checked_PC_EXPAT",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "1"
+		},
+		{
+			"name" : "__pkg_config_checked_PKG_FONTCONFIG",
 			"properties" : 
 			[
 				{
@@ -3263,10 +4859,10 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libexpat.so"
+			"value" : "/usr/lib/libexpat.so"
 		},
 		{
-			"name" : "pkgcfg_lib_PC_EXPAT_m",
+			"name" : "pkgcfg_lib_PKG_FONTCONFIG_fontconfig",
 			"properties" : 
 			[
 				{
@@ -3279,7 +4875,23 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/usr/lib/x86_64-linux-gnu/libm.so"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libfontconfig.so"
+		},
+		{
+			"name" : "pkgcfg_lib_PKG_FONTCONFIG_freetype",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib/libfreetype.so"
 		},
 		{
 			"name" : "prefix_result",
@@ -3291,7 +4903,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/usr/lib/x86_64-linux-gnu"
+			"value" : "/home/DerWissenschaftlerAusMexiko/anaconda3/envs/DataAnalisis/lib"
 		}
 	],
 	"kind" : "cache",
