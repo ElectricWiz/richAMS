@@ -10,26 +10,22 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhis
 {
     G4AnalysisManager* man = G4AnalysisManager::Instance();
     
-    if(aStep->GetTrack()->GetDefinition()->GetParticleName() == "opticalphoton")
-    {
-        
         //Get the position of the sensitive detector
-        G4ThreeVector pos = aStep->GetPostStepPoint()->GetTouchableHandle()->GetVolume()->GetObjectTranslation();
-        man->FillNtupleDColumn(1, 0, pos[0]);
-        man->FillNtupleDColumn(1, 1, pos[1]);
+    G4ThreeVector pos = aStep->GetPostStepPoint()->GetTouchableHandle()->GetVolume()->GetObjectTranslation();
+    man->FillNtupleDColumn(1, 0, pos[0]);
+    man->FillNtupleDColumn(1, 1, pos[1]);
 
-        G4int eventID = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
-        man->FillNtupleIColumn(1, 2, eventID);
+    G4int eventID = G4RunManager::GetRunManager()->GetCurrentEvent()->GetEventID();
+    man->FillNtupleIColumn(1, 2, eventID);
 
-        G4int trackID = aStep->GetTrack()->GetTrackID();
-        man->FillNtupleIColumn(1, 3, trackID);
+    G4int trackID = aStep->GetTrack()->GetTrackID();
+    man->FillNtupleIColumn(1, 3, trackID);
         
-        man->AddNtupleRow(1);
+    man->AddNtupleRow(1);
 
         //dataStore->AddPhotonPosition(pos);
         
-        aStep->GetTrack()->SetTrackStatus(fStopAndKill);
-    }
+    aStep->GetTrack()->SetTrackStatus(fStopAndKill);
 
     if(aStep->GetTrack()->GetDefinition()->GetParticleName() == "proton")
     {       

@@ -207,6 +207,7 @@ double energy[75] = {
     mptAerogel->AddProperty("ABSLENGTH", energy, absLengths, 75);
     mptAerogel->AddProperty("REFLECTIVITY", energy, R, 75);
     mptAerogel->AddProperty("TRANSMITTANCE", energy, aeroTrans, 75);
+    mptAerogel->AddProperty("RAYLEIGH", energy, scatLengths, 75);
     Aerogel->SetMaterialPropertiesTable(mptAerogel);
     
     G4Material *worldMat = Vacuum;

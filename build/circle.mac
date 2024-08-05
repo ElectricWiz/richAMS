@@ -8,5 +8,5 @@
 /gps/pos/centre 0 0 315 cm
 /gps/pos/radius 50 cm
 
-/run/beamOn 100000
+/run/beamOn 500000
 

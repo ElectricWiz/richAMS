@@ -10,7 +10,7 @@ import math
 
 ene = 3.0
 N = 2
-h = 20
+h = 12.5
 testj = (round((ene - 3.0)/1.2)) + 1
 ene_str = str(ene).replace('.', '_')
 
@@ -279,10 +279,10 @@ from scipy.optimize import fsolve
 
 # Define the function
 def calculate_half_angle(R, theta0=0.7):    
-    def func(theta, R1=R, n=1.05, h=h, L=775):
+    def func(theta, R1=R, n=1.03, h=h, L=750):
         return L * np.tan(np.arcsin(n * np.sin(theta))) + (h / 2) * np.tan(theta) - R1
 
-    theta_sol = fsolve(func, theta0, xtol=1e-2)
+    theta_sol = fsolve(func, theta0, xtol=1e-4)
 
     return theta_sol[0]
 
@@ -311,9 +311,9 @@ def calculate_beta_proton(energy_gev):
 
     return beta
 
-def calculate_radius(ene, n=1.05, h=h, L=775):
+def calculate_radius(ene, n=1.03, h=h, L=750):
     beta = calculate_beta_proton(ene)
-    theta = np.arccos(1/(beta*1.05))
+    theta = np.arccos(1/(beta*n))
 
     return L * np.tan(np.arcsin(n * np.sin(theta))) + (h / 2) * np.tan(theta)
 
