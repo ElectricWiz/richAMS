@@ -6,14 +6,18 @@ find_package(Geant4 REQUIRED ui_all vis_all)
 
 include(${Geant4_USE_FILE})
 
-file(GLOB sources ${PROJECT_SOURCE_DIR}/*.cc)
-file(GLOB headers ${PROJECT_SOURCE_DIR}/*.hh)
+include_directories(${PROJECT_SOURCE_DIR}/headers)
+
+file(GLOB sources ${PROJECT_SOURCE_DIR}/source/*.cc)
+file(GLOB headers ${PROJECT_SOURCE_DIR}/headers/*.hh)
 
 file(GLOB MACRO_FILES ".mac")
-
 file(COPY ${MACRO_FILES} DESTINATION ${PROJECT_BINARY_DIR})
 
-add_executable(sim Sim.cc ${sources} ${headers})
+set(SIM_SOURCE ${PROJECT_SOURCE_DIR}/source/Sim.cc)
+list(APPEND sources ${SIM_SOURCE})
+
+add_executable(sim source/Sim.cc ${sources} ${headers})
 target_link_libraries(sim ${Geant4_LIBRARIES})
 
 add_custom_target(Simulation DEPENDS sim)
