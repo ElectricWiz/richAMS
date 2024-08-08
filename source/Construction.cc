@@ -193,14 +193,14 @@ double energy[75] = {
     std::fill_n(rindexBoro, 75, 1.51446);
     G4double rindexWorld[75];
     std::fill_n(rindexWorld, 75, 1.0);
-    G4double rindexPoly[75];
-    std::fill_n(rindexPoly, 75, 1.58);
+    //G4double rindexPoly[75];
+    //std::fill_n(rindexPoly, 75, 1.58);
 
-    G4double reflecPoly[75];
-    std::fill_n(reflecPoly, 75, 0.975);
+    //G4double reflecPoly[75];
+    //std::fill_n(reflecPoly, 75, 0.975);
     
-    G4double transPoly[75];
-    std::fill_n(reflecPoly, 75, 0.33);
+    //G4double transPoly[75];
+    //std::fill_n(reflecPoly, 75, 0.33);
 
     G4MaterialPropertiesTable* mptAerogel = new G4MaterialPropertiesTable();
     mptAerogel->AddProperty("RINDEX", energy, rindexAero, 75);
@@ -216,82 +216,62 @@ double energy[75] = {
 
     worldMat->SetMaterialPropertiesTable(mptWorld);
 
-    G4MaterialPropertiesTable* mptPoly = new G4MaterialPropertiesTable();
-    mptPoly->AddProperty("RINDEX", energy, rindexPoly, 75);
-    mptPoly->AddProperty("REFLECTIVITY", energy, reflecPoly, 75);
-    mptPoly->AddProperty("TRANSMITTANCE", energy, transPoly, 75);
-    Poly->SetMaterialPropertiesTable(mptPoly);
+    //G4MaterialPropertiesTable* mptPoly = new G4MaterialPropertiesTable();
+    //mptPoly->AddProperty("RINDEX", energy, rindexPoly, 75);
+    //mptPoly->AddProperty("REFLECTIVITY", energy, reflecPoly, 75);
+    //mptPoly->AddProperty("TRANSMITTANCE", energy, transPoly, 75);
+    //Poly->SetMaterialPropertiesTable(mptPoly);
 
     G4MaterialPropertiesTable* mptBoro = new G4MaterialPropertiesTable();
     mptBoro->AddProperty("EFFICIENCY", energy, qEff, 75);
     Borosilicate->SetMaterialPropertiesTable(mptBoro);
 
-    G4Box* solidWorld = new G4Box("solidWorld", 1.38*m, 1.38*m, 3.5*m);
+G4Box* solidWorld = new G4Box("solidWorld", 1.38*m, 1.38*m, 3.5*m);
     G4LogicalVolume* logicWorld = new G4LogicalVolume(solidWorld, Vacuum, "logicWorld");
     logicWorld->SetVisAttributes(invisible);
     G4VPhysicalVolume* physWorld = new G4PVPlacement(0, G4ThreeVector(0., 0., 0.), logicWorld, "physWorld", 0, false, 0, true);
    
-    G4double tileWidth = 18*cm;
-    G4double tileHeight = 18*cm;
-    G4double padding = 2.5*cm;
-    G4Box* gelTile = new G4Box("gelTile", tileWidth, tileHeight, 1.25*cm);
+    G4Tubs* circularRadiator = new G4Tubs("circularRadiator", 0.*m, 50*cm, 2*cm, 0.*deg, 360.*deg);
 
-    G4double effectiveTileWidth = tileWidth + padding;
-    G4double effectiveTileHeight = tileHeight + padding;
+    /*G4Box* cutNaF = new G4Box("cutNaF", 15.*cm, 15.*cm, 0.55*cm);
+    G4Box* solidNaF = new G4Box("solidNaF", 14.*cm, 14.*cm, 0.5*cm);
 
-    G4double areaWidth = 104*cm;
-    G4double areaHeight = 104*cm;
+    G4VSolid* solidAero = new G4SubtractionSolid("solidAero", circularRadiator, cutNaF, 0, G4ThreeVector(0., 0., 0.));*/
 
-    // Adjusted dimensions for the fillings
-    G4double fillingWidth = effectiveTileWidth; // Or specific width of the gap
-    G4double fillingHeight = padding - tileHeight; // Assuming padding is the gap between tiles
-    G4double fillingDepth = 5*cm; // Adjusted depth of the filling
+        // Define the dimensions of the box
+    G4double halfX = 65.0 * cm / 2; // Half-lengths
+    G4double halfY = 65.0 * cm / 2;
+    G4double halfZ = 13.0 * cm / 2;
 
-    G4Box* largeSquareSolid = new G4Box("LargeSquareSolid", areaWidth/2, areaHeight/2, fillingDepth/2);
+    logicAero = new G4LogicalVolume(circularRadiator, Aerogel, "logicAero");
+    logicAero->SetVisAttributes(redColor);
 
-    G4MultiUnion* tilesUnion = new G4MultiUnion("TilesUnion");
-    G4MultiUnion* tilesUnion1 = new G4MultiUnion("TilesUnion1");
+    /*logicNaF = new G4LogicalVolume(solidNaF, NaF, "logicNaF");
+    logicNaF->SetVisAttributes(blueColor);*/
 
-    for (G4int x = 0; x < 5; x++) {
-        for (G4int y = 0; y < 5; y++) {
-            G4double posX = x * effectiveTileWidth - areaWidth/2 + tileWidth/2;
-            G4double posY = y * effectiveTileHeight - areaHeight/2 + tileHeight/2;
-
-            G4Box* vacanciesSolid = new G4Box("TileSolid", tileWidth/2, tileHeight/2, fillingDepth/2);
-            G4Transform3D transform = G4Transform3D(G4RotationMatrix(), G4ThreeVector(posX, posY, 0));
-            tilesUnion->AddNode(*vacanciesSolid, transform);
-
-            G4Box* tileSolid = new G4Box("Tile1Solid", tileWidth/2*.98, tileHeight/2*.98, fillingDepth/4*.98);
-            tilesUnion1->AddNode(*tileSolid, transform);
-        }
-    }
-    tilesUnion->Voxelize();
-    tilesUnion1->Voxelize();
-
-    G4SubtractionSolid* subtractedSolid = new G4SubtractionSolid("SubtractedSolid", largeSquareSolid, tilesUnion);
-
-    G4LogicalVolume* logicSubtractedSolid = new G4LogicalVolume(subtractedSolid, Poly, "logicSubtractedSolid");
-    logicSubtractedSolid->SetVisAttributes(blueColor);
-
-    G4LogicalVolume* logicTilesUnion1 = new G4LogicalVolume(tilesUnion1, Aerogel, "logicTilesUnion");
-    logicTilesUnion1->SetVisAttributes(redColor);
-
-    G4ThreeVector position = G4ThreeVector(0, 0, 75*cm); 
-    G4VPhysicalVolume* subsSolid = new G4PVPlacement(0, position, logicSubtractedSolid, "SubtractedFilling", logicWorld, false, 0, true);
-    G4VPhysicalVolume* unionSolid = new G4PVPlacement(0, position, logicTilesUnion1, "TilesFilling", logicWorld, false, 0, true);
+    G4VPhysicalVolume* physAero = new G4PVPlacement(0, G4ThreeVector(0., 0., 77.5*cm), logicAero, "physAero", logicWorld, false, 0, true);
+    //G4VPhysicalVolume* physNaF = new G4PVPlacement(0, G4ThreeVector(0., 0., 81*cm), logicNaF, "physNaF", logicWorld, false, 0, true);
 
     G4Box *solidDetector = new G4Box("solidDetector", 8.5*mm, 8.5*mm, 5*mm); 
     logicDetector = new G4LogicalVolume(solidDetector, Borosilicate, "logicDetector");
 
-    for (G4int i = 0; i < 120; i++) {
-        for (G4int j = 0; j < 120; j++) {
+
+    for (G4int i = 0; i < 200; i++) {
+        for (G4int j = 0; j < 200; j++) {
             G4double x = -68 * cm + (i + 0.425) * m / 100;
             G4double y = -68 * cm + (j + 0.425) * m / 100;
             G4double distance = std::sqrt(x * x + y * y);
 
-            G4VPhysicalVolume* physDetector = new G4PVPlacement(0, G4ThreeVector(x, y, 0.*cm), logicDetector, "physDetector", logicWorld, true, j + i);
+            /*if (distance <= 65.0*cm && (std::abs(x) > 31.8*cm || std::abs(y) > 31.8*cm)) {
+                G4VPhysicalVolume* physDetector = new G4PVPlacement(0, G4ThreeVector(x, y, 16.*cm), logicDetector, "physDetector", logicWorld, false, j + i * 100);
+            }*/
+
+            if (distance <= 65.0*cm ) {
+                G4VPhysicalVolume* physDetector = new G4PVPlacement(0, G4ThreeVector(x, y, 0.*cm), logicDetector, "physDetector", logicWorld, false, j + i * 100);
+            }
         }   
     }
+
 
     G4bool checkOverlaps = true; // Change this to false to disable overlap checking
 
