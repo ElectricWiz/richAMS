@@ -7,9 +7,9 @@ import numpy as np
 import gc
 import math
 
-N = 21 
+N = 16
 
-file = ROOT.TFile('training.root')
+file = ROOT.TFile(f'training.root')
 
 tree = file.Get("Detectors")
 branches = ['detectorPositionX', 'detectorPositionY', 'eventNumber']

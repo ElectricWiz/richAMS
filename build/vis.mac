@@ -3,15 +3,15 @@
 /gps/ene/type Pow
 /gps/ene/alpha -2.7 
 /gps/ene/min 3 GeV
-/gps/ene/max 11 GeV
+/gps/ene/max 10 GeV
 
 /gps/pos/type Plane
 /gps/pos/shape Circle
 /gps/pos/centre 0 0 86 cm
-/gps/pos/radius 45 cm
+/gps/pos/radius 35 cm
 
 /gps/ang/type cos
-/gps/ang/maxtheta 0.92 rad
+/gps/ang/maxtheta 0.52 rad
 
 /run/beamOn 1000000
 

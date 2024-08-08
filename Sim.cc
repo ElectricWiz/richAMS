@@ -60,8 +60,8 @@ int main(int argc, char** argv)
 
     G4UImanager* UImanager =  G4UImanager::GetUIpointer();
 /*    
-    UImanager->ApplyCommand("/vis/open OGL");
-    UImanager->ApplyCommand("/vis/viewer/set/style surface");
+    UImanager->ApplyCommand("/vis/open RayTracerX");
+    UImanager->ApplyCommand("/vis/viewer/set/style1surface");
     UImanager->ApplyCommand("/vis/viewer/set/viewpointVector -1 -1 0.5");
     UImanager->ApplyCommand("/vis/drawVolume");
     UImanager->ApplyCommand("/vis/viewer/set/autoRefresh true");
@@ -73,6 +73,6 @@ int main(int argc, char** argv)
     G4String command  = "/control/execute ";
     G4String fileName = argv[1];
     UImanager->ApplyCommand(command + fileName);
-    
+ 
     return 0;
 }
