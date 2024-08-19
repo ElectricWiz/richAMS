@@ -19,10 +19,8 @@
 
 int main(int argc, char** argv)
 {
-    // Get the current time
     std::time_t now = std::time(0);
 
-    // Use the current time as the seed for the random number generator
     CLHEP::HepRandom::setTheSeed(now);
 
     DataStore* dataStore = new DataStore();
@@ -59,20 +57,32 @@ int main(int argc, char** argv)
     visManager->Initialize();
 
     G4UImanager* UImanager =  G4UImanager::GetUIpointer();
-/*    
-    UImanager->ApplyCommand("/vis/open RayTracerX");
-    UImanager->ApplyCommand("/vis/viewer/set/style1surface");
-    UImanager->ApplyCommand("/vis/viewer/set/viewpointVector -1 -1 0.5");
-    UImanager->ApplyCommand("/vis/drawVolume");
-    UImanager->ApplyCommand("/vis/viewer/set/autoRefresh true");
-    UImanager->ApplyCommand("/vis/scene/add/trajectories smooth");
-    UImanager->ApplyCommand("/vis/scene/endOfEventAction accumulate");  
-*/
 
-   //batch mode
-    G4String command  = "/control/execute ";
-    G4String fileName = argv[1];
-    UImanager->ApplyCommand(command + fileName);
- 
+    if (argc > 1) {
+        G4String command = "/control/execute ";
+        G4String fileName = argv[1];
+        UImanager->ApplyCommand(command + fileName);
+    } else {
+        UImanager->ApplyCommand("/vis/open OGL 800x800-0+0");
+        UImanager->ApplyCommand("/vis/scene/handler/create OGLIX");
+        UImanager->ApplyCommand("/vis/viewer/create !! 800x800-0+0");
+        UImanager->ApplyCommand("/vis/viewer/set/style1surface");
+        UImanager->ApplyCommand("/vis/viewer/set/viewpointVector -1 -1 0");
+        UImanager->ApplyCommand("/vis/drawVolume");
+        UImanager->ApplyCommand("/vis/viewer/set/autoRefresh true");
+        UImanager->ApplyCommand("/vis/scene/add/trajectories smooth");
+        UImanager->ApplyCommand("/vis/scene/endOfEventAction accumulate");  
+
+        UImanager->ApplyCommand("/vis/viewer/flush");
+        UImanager->ApplyCommand("/vis/viewer/refresh");
+
+        ui->SessionStart();
+    }
+
+    delete ui;
+    delete visManager;
+    delete runManager;
+    delete dataStore;
+
     return 0;
 }

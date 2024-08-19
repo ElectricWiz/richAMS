@@ -17,6 +17,7 @@ MyRunAction::MyRunAction()
     man->CreateNtupleDColumn("detectorPositionY");
     man->CreateNtupleIColumn("eventNumber");
     man->CreateNtupleIColumn("trackID");
+    man->CreateNtupleDColumn("energy");
 
     man->FinishNtuple();
 

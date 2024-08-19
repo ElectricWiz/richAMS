@@ -10,7 +10,6 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhis
 {
     G4AnalysisManager* man = G4AnalysisManager::Instance();
     
-        //Get the position of the sensitive detector
     G4ThreeVector pos = aStep->GetPostStepPoint()->GetTouchableHandle()->GetVolume()->GetObjectTranslation();
     man->FillNtupleDColumn(1, 0, pos[0]);
     man->FillNtupleDColumn(1, 1, pos[1]);
@@ -20,10 +19,13 @@ G4bool MySensitiveDetector::ProcessHits(G4Step *aStep, G4TouchableHistory *ROhis
 
     G4int trackID = aStep->GetTrack()->GetTrackID();
     man->FillNtupleIColumn(1, 3, trackID);
+
+    G4double energy = aStep->GetTrack()->GetKineticEnergy();
+    man->FillNtupleDColumn(1, 4, energy);
         
     man->AddNtupleRow(1);
 
-        //dataStore->AddPhotonPosition(pos);
+    //dataStore->AddPhotonPosition(pos);
         
     aStep->GetTrack()->SetTrackStatus(fStopAndKill);
 
