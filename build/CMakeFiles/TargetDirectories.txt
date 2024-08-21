@@ -1,4 +1,0 @@
-/home/electricwiz/richAMS/build/CMakeFiles/sim.dir
-/home/electricwiz/richAMS/build/CMakeFiles/Simulation.dir
-/home/electricwiz/richAMS/build/CMakeFiles/edit_cache.dir
-/home/electricwiz/richAMS/build/CMakeFiles/rebuild_cache.dir
