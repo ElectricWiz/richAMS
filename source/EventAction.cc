@@ -17,6 +17,12 @@ void EventAction::BeginOfEventAction(const G4Event* event)
 
     G4double kineticEnergy = event->GetPrimaryVertex()->GetPrimary()->GetKineticEnergy();
 
+    G4ThreeVector momentumDirection = event->GetPrimaryVertex()->GetPrimary()->GetMomentumDirection();
+
+    G4double l = momentumDirection.x();
+    G4double m = momentumDirection.y();
+    G4double n = momentumDirection.z();    
+
     // Obtain the event ID from the run manager
     G4RunManager* runManager = G4RunManager::GetRunManager();
     G4int eventID = runManager->GetCurrentEvent()->GetEventID();
@@ -26,7 +32,9 @@ void EventAction::BeginOfEventAction(const G4Event* event)
 
     man->FillNtupleDColumn(0, 0, kineticEnergy);
     man->FillNtupleIColumn(0, 1, eventID);
-
+    man->FillNtupleDColumn(0, 2, l);
+    man->FillNtupleDColumn(0, 3, m);
+    man->FillNtupleDColumn(0, 4, n);
     man->AddNtupleRow(0);
 
 }

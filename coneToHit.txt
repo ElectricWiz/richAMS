@@ -1,0 +1,45 @@
+Inclined Ellipse Equation
+-------------------------
+
+The general equation of an inclined ellipse centered at (h, k) with semi-major axis a, semi-minor axis b, and rotation angle φ is:
+
+((x-h)cosφ + (y-k)sinφ)² / a² + ((y-k)cosφ - (x-h)sinφ)² / b² = 1
+
+Minimum Distance Formula
+------------------------
+
+To find the minimum distance from a point P(x₀, y₀) to the inclined ellipse, we can follow these steps:
+
+1. Translate the ellipse to the origin by substituting x with (x - h) and y with (y - k):
+
+   (xcosφ + ysinφ)² / a² + (ycosφ - xsinφ)² / b² = 1
+
+2. Express the point P in the rotated coordinate system:
+   
+   x' = (x₀-h)cosφ + (y₀-k)sinφ
+   y' = (y₀-k)cosφ - (x₀-h)sinφ
+
+3. The minimum distance from the point P'(x', y') to the ellipse in the rotated coordinate system is given by:
+
+   d = |a²b²(1 - (x'²/a² + y'²/b²)) / (a²y'² + b²x'²)| ^(1/2)
+
+Expressing in terms of θ and φ
+------------------------------
+
+The semi-major and semi-minor axes lengths (a and b) of the ellipse can be expressed in terms of the cone half-angle θ and the plane normal direction cosines (l, m, n):
+
+a = h tanθ / √(1 - (l² + m²) / n² tan²θ)
+b = h tanθ / √(1 + (l² + m²) / n² tan²θ)
+
+The rotation angle φ is given by:
+
+tan(2φ) = (2lm / (n² tan²θ)) / ((1 + (l/n)² tan²θ) - (1 + (m/n)² tan²θ))
+
+The center of the ellipse (h, k) is:
+
+h = -l / (n tanθ)
+k = -m / (n tanθ)
+
+By substituting these expressions into the minimum distance formula, we obtain the minimum distance as a function of θ and φ:
+
+d = |a²(θ)b²(θ)(1 - ((x₀-h(θ))cosφ(θ) + (y₀-k(θ))sinφ(θ))² / a²(θ) - ((y₀-k(θ))cosφ(θ) - (x₀-h(θ))sinφ(θ))² / b²(θ)) / (a²(θ)((y₀-k(θ))cosφ(θ) - (x₀-h(θ))sinφ(θ))² + b²(θ)((x₀-h(θ))cosφ(θ) + (y₀-k(θ))sinφ(θ))²)| ^(1/2)

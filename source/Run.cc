@@ -8,6 +8,9 @@ MyRunAction::MyRunAction()
 
     man->CreateNtupleDColumn("energyPrimary");
     man->CreateNtupleIColumn("eventNumber");
+    man->CreateNtupleDColumn("l");
+    man->CreateNtupleDColumn("m");
+    man->CreateNtupleDColumn("n");
 
     man->FinishNtuple();
 
