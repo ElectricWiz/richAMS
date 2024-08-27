@@ -1,5 +1,5 @@
 ![C++](https://img.shields.io/badge/C%2B%2B-17-orange.svg)
-![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.11-blue.svg)
 # Simulation Project
 
 ## Overview
