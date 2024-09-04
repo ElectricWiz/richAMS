@@ -5,104 +5,112 @@ import ROOT
 import pandas as pd
 import numpy as np
 import gc
+import tensorflow as tf
+
 import math
 
-N = 16
+N = 21
 
 file = ROOT.TFile(f'training.root')
 
+# Access the 'Detectors' tree
 tree = file.Get("Detectors")
+
+# Define the branches you want to extract
 branches = ['detectorPositionX', 'detectorPositionY', 'eventNumber']
+
+# Determine the total number of entries
 total_entries = tree.GetEntries()
-chunk_size = 15000000 # Adjust based on your system's RAM
+
+# Define the chunk size
+chunk_size = 1500000000 # Adjust based on your system's RAM
+
+# Initialize a list for the chunk DataFrames
 dfs = []
 
+# Process the tree in chunks
 for start in range(0, total_entries, chunk_size):
     end = min(start + chunk_size, total_entries)
     data_list = []
 
+    # Loop over the entries in the current chunk
     for i in range(start, end):
         tree.GetEntry(i)
+        # Access branch data directly
         data = {branch: getattr(tree, branch) for branch in branches}
         data_list.append(data)
 
+    # Convert the chunk to a DataFrame
     chunk_df = pd.DataFrame(data_list)
+
+    # Convert the 'eventNumber' column to int32
     chunk_df['eventNumber'] = chunk_df['eventNumber'].astype('int32')
+
+    # Add the chunk DataFrame to the list
     dfs.append(chunk_df)
+
+    # Delete the data list to free up memory
     del data_list
 
+    # Force the garbage collector to release unreferenced memory
     gc.collect()
 
+# Concatenate all chunk DataFrames
 df = pd.concat(dfs, ignore_index=True)
 
 tree1 = file.Get("PrimaryParticle")
-branches1 = ['energyPrimary', 'eventNumber']
+
+# Define the branches you want to extract from the 'PrimaryParticle' tree
+branches1 = ['energyPrimary', 'eventNumber', 'l', 'm', 'n']
+
+# Determine the total number of entries in the 'PrimaryParticle' tree
 total_entries1 = tree1.GetEntries()
 
+# Initialize an empty DataFrame for the final result
 df1 = pd.DataFrame()
 
 for start in range(0, total_entries1, chunk_size):
     end = min(start + chunk_size, total_entries1)
     data_list1 = []
 
+    # Loop over the entries in the current chunk
     for i in range(start, end):
         tree1.GetEntry(i)
+        # Access branch data directly
         data1 = {branch: getattr(tree1, branch) for branch in branches1}
         data_list1.append(data1)
 
+    # Convert the chunk to a DataFrame
     chunk_df1 = pd.DataFrame(data_list1)
+
+    # Divide the 'energyPrimary' column by 1000 and convert to float16
     chunk_df1['energyPrimary'] = (chunk_df1['energyPrimary'] / 1000)
     chunk_df1['eventNumber'] = chunk_df1['eventNumber'].astype('int32')
 
+    # Append the chunk DataFrame to the main DataFrame
     df1 = pd.concat([df1, chunk_df1], ignore_index=True)
 
+    # Delete the chunk DataFrame and the data list to free up memory
     del chunk_df1
     del data_list1
 
+    # Force the garbage collector to release unreferenced memory
+    gc.collect()
     gc.collect()
 
-tree = file.Get("CircleCenter")
-branches = ['centerX', 'centerY', 'eventNumber']
-total_entries = tree.GetEntries()
-chunk_size = 15000000 # Adjust based on your system's RAM
-df2 = pd.DataFrame()
-
-for start in range(0, total_entries, chunk_size):
-    end = min(start + chunk_size, total_entries)
-    data_list = []
-
-    for i in range(start, end):
-        tree.GetEntry(i)
-        data = {branch: getattr(tree, branch) for branch in branches}
-        data_list.append(data)
-
-    chunk_df2 = pd.DataFrame(data_list)
-
-    chunk_df2['centerX'] = chunk_df2['centerX']
-    chunk_df2['centerY'] = chunk_df2['centerY']
-
-    df2 = pd.concat([df2, chunk_df2], ignore_index=True)
-
-    del chunk_df2
-    del data_list
-
-    gc.collect()
 
 df1 = df1[df1['eventNumber'].isin(df['eventNumber'])]
-df = df[df['eventNumber'].isin(df2['eventNumber'])]
 gc.collect()
 
 df = df.drop_duplicates(subset=['eventNumber', 'detectorPositionX', 'detectorPositionY'])
 
 gc.collect()
 
-df = df.merge(df1[['eventNumber', 'energyPrimary']], on='eventNumber', how='left').merge(df2[['eventNumber', 'centerX', 'centerY']], on='eventNumber', how='left')
+df = df.merge(df1[['eventNumber', 'energyPrimary']], on='eventNumber', how='left')
 
 del df1
 gc.collect()
 
-del df2
-gc.collect()
 
 # Convert columns back to float16
 df['eventNumber'] = df['eventNumber'].astype('int32')
@@ -120,16 +128,12 @@ def serialize_example(group, label):
     # Convert the 'detectorPositionX', 'detectorPositionY', 'duplicates_count' columns to floats
     detectorPositionX_floats = group['detectorPositionX'].values.astype(float)
     detectorPositionY_floats = group['detectorPositionY'].values.astype(float)
-    centerX = group['centerX'].values.astype(float)
-    centerY = group['centerY'].values.astype(float)
     label_float = float(label)
 
     feature = {
         'detectorPositionX': tf.train.Feature(float_list=tf.train.FloatList(value=detectorPositionX_floats)),
         'detectorPositionY': tf.train.Feature(float_list=tf.train.FloatList(value=detectorPositionY_floats)),
-        'label': tf.train.Feature(float_list=tf.train.FloatList(value=[label_float])),
-        'centerX': tf.train.Feature(float_list=tf.train.FloatList(value=centerX)),
-        'centerY': tf.train.Feature(float_list=tf.train.FloatList(value=centerY))
+        'label': tf.train.Feature(float_list=tf.train.FloatList(value=[label_float]))
     }
     example_proto = tf.train.Example(features=tf.train.Features(feature=feature))
     return example_proto.SerializeToString()
